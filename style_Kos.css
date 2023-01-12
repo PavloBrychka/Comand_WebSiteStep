@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+.BestPropositions {
+  padding: 3% 0;
+}
 .BestPropositions h2 {
   text-align: center;
   font-weight: 100;
