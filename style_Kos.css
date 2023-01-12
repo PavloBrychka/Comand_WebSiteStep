@@ -81,6 +81,7 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: 2% 0;
+  cursor: pointer;
 }
 .foot .table_1 .right {
   width: 45vw;
@@ -97,6 +98,7 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: 2% 0;
+  cursor: pointer;
 }
 .foot .info_table {
   padding-top: 3%;
@@ -104,6 +106,10 @@
 }
 .foot .info_table tr td:first-child {
   color: lightgray;
+}
+.foot #map {
+  width: 100%;
+  height: 40vh;
 }
 .foot .comps {
   padding-top: 3%;

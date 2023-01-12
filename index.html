@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_Kos.css">
     <title>Document</title>
-    
+
 </head>
 
 <body>
@@ -36,12 +36,16 @@
                 <div class="price">4048 грн</div>
             </div>
             <div class="element">
-                <div class="image" style="background-image: url(/Screenshots_Kosobutskyi/screen6.png); background-size: 25%; background-position: center;"></div>
+                <div class="image"
+                    style="background-image: url(/Screenshots_Kosobutskyi/screen6.png); background-size: 25%; background-position: center;">
+                </div>
                 <div class="description"><span>Дзеркало StudioGlass BELFAST на ніжці</span></div>
                 <div class="price">4048 грн</div>
             </div>
             <div class="element">
-                <div class="image" style="background-image: url(/Screenshots_Kosobutskyi/screen7.png);background-size: 25%; background-position: center;"></div>
+                <div class="image"
+                    style="background-image: url(/Screenshots_Kosobutskyi/screen7.png);background-size: 25%; background-position: center;">
+                </div>
                 <div class="description"><span>Дзеркало StudioGlass ONE RAFFLES на ніжці</span></div>
                 <div class="price">4048 грн</div>
             </div>
@@ -78,12 +82,13 @@
                 </td>
             </tr>
         </table>
-        
+
         <hr>
         <table class="info_table">
             <tr>
                 <td>e-mail</td>
-                <td>myemail@gmail.com</td>
+                <td><a href="mailto: myemail@gmail.com"
+                        style="text-decoration: none; color: white;">myemail@gmail.com</a></td>
             </tr>
             <tr>
                 <td>адреса</td>
@@ -98,6 +103,7 @@
                 <td>Сб-Нд: Вихідний</td>
             </tr>
         </table>
+        <div id="map"></div>
         <hr>
         <div class="comps">
             <div style="width: fit-content; text-align: center; margin: auto 0;">Нам довіряють:</div>
@@ -107,6 +113,17 @@
             <div style="background-image: url(/Screenshots_Kosobutskyi/screen1_4.png); cursor: pointer;"></div>
         </div>
     </footer>
+    <script>function myMap() {
+            let mapCanvas = document.getElementById("map");
+            let mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.2),
+                zoom: 10
+            };
+            let map = new google.maps.Map(mapCanvas, mapOptions);
+        }</script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR8P72HMX3zllKeeZt8X89dJWMEu0LSX8&callback=myMap"></script>
+
 </body>
 
 </html>

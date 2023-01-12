@@ -21,7 +21,7 @@
         margin: 5% auto 0 auto;
         padding: 0 3% 10px 3%;
     }
-
+    
     .elements {
         
         padding: 5% 0 0 0;
@@ -95,6 +95,7 @@
                 li {
                     width: fit-content;
                     margin: 2% 0;
+                    cursor: pointer;
                 }
             }
         }
@@ -112,6 +113,7 @@
                 li {
                     width: fit-content;
                     margin: 2% 0;
+                    cursor: pointer;
                 }
             }
         }
@@ -125,6 +127,11 @@
                 color: lightgray;
             }
         }
+    }
+    #map
+    {
+        width: 100%;
+        height: 40vh;
     }
     .comps
     {
