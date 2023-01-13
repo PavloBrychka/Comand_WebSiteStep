@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
     border-radius: 10px;
     transition: all .4s ease;
 }
-.navigation .b1{
+.navigation #b1{
     font-size: 25px;
     left: 104px;
     top: -5px;
@@ -55,7 +55,7 @@ body::-webkit-scrollbar {
 }
 .bar:hover{
     transform: scale(1.1);
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     height: 7px;
     width: 7px;
 }
@@ -72,12 +72,6 @@ input[name="r"]{
     width: 100%;
     height: 100%;
 }
-#r1:checked ~ .s1{
-    margin-left: 0%;
-}
-#r2:checked ~ .s1{
-    margin-left: -50%;
-}
 .page .pid_menu{
     position: relative;
     width: 100%;
@@ -87,7 +81,7 @@ input[name="r"]{
 @font-face {
     font-family: Gina-Thin; 
     src: url(fonts/Gina-Thin.woff2);
-   }
+}
 h1 , h2{
     color: #ddd;
     font-size: 70px;
@@ -119,7 +113,6 @@ i{
     top: 160px;
     left: 80px;
     transition: all .4s ease;
-
 }
 .line2{
     background-color: rgb(75, 75, 75);
@@ -129,7 +122,6 @@ i{
     top: 160px;
     left: 40px;
     transition: all .3s ease;
-
 }
 .btn b:hover ~.line{
     opacity: 0.8;
@@ -192,7 +184,62 @@ h2{
     top: 0px;
     left: -1px;
     border: 0.5px solid rgb(71, 71, 71);
+    z-index: 1000;
 }
+.inst{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 338px;
+    left: 15px;
+    border-radius: 50px;
+    transition: all .2s ease;
+
+}
+.inst:hover{
+    background-color: #161616;
+}
+.inst .i{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+.viber{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 378px;
+    left: 14px;
+    border-radius: 50px;
+    transition: all .2s ease;
+}
+.viber:hover{
+    background-color: #161616;
+}
+.viber .v{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.teleg{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 419px;
+    left: 15px;
+    border-radius: 50px;
+    transition: all .2s ease;
+}
+.teleg:hover{
+    background-color: #161616;
+}
+
+.teleg .t{
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+
 .logo{
     position: absolute;
     top: 15px;
@@ -246,6 +293,7 @@ h2{
     width: 40px;
     border-radius: 50px;
     transition: all .4s ease;
+    cursor: pointer;
 }
 .btn_p .h-icon{
     position: absolute;
@@ -260,6 +308,7 @@ h2{
     width: 40px;
     border-radius: 50px;
     transition: all .4s ease;
+    cursor: pointer;
 }
 .btn_l .h-icon{
     position: absolute;
@@ -267,6 +316,7 @@ h2{
     top: 12px;
 }
 .btn_a{
+    cursor: pointer;
     position: absolute;
     left: 1060px;
     top:15px;
@@ -303,47 +353,259 @@ h2{
     height: 70px;
     border: 1px solid rgb(71, 71, 71);
     transition: all .4s ease;
-
+    cursor: pointer;
 }
 .koshik:hover{
     background-color: #00000075;
 }
-.logo_menu{
+#logo_menu{
     position: absolute;
     top: 0px;
     left: 0px;
     width: 70px;
     height: 70px;
     cursor: pointer;
+    transition: all .3s ease;
 }
-.logo_menu .line1{
+#logo_menu #line1{
     background-color: white;
     width: 30px;
     height: 1px;
     position: absolute;
     top: 17px;
     left: 20px;
+    transition: all .3s ease;
 }
-.logo_menu .line2{
+#logo_menu #line2{
     background-color: white;
     width: 15px;
     height: 1px;
     position: absolute;
     top: 23px;
     left: 20px;
-
+    transition: all .3s ease;
 }
-.logo_menu .line3{
+#logo_menu #line3{
     background-color: white;
     width: 20px;
     height: 1px;
     position: absolute;
     top: 29px;
     left: 30px;
+    transition: all .3s ease;
 }
-.logo_menu b{
+#logo_menu b{
     font-size: 11px;
     position: absolute;
     left: 18px;
     top: 38px;
 }
+#p_show_menu{
+    position: absolute;
+    top: 0px;
+    left: -1380px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
+    background: rgba(37, 37, 37, 0.253);
+    width: 1380px;
+    height: 795px;
+    transition: all .4s ease;
+    z-index: 900;
+}
+#p_show_menu a{
+    color: white;
+    font-family: Gina-Thin;
+    font-size: 35px;
+    font-weight: 500;
+    position: absolute;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.LED_MIRROR{
+    top: 215px;
+    left: 165px;
+}
+.IRON_MIRROR{
+    top: 290px;
+    left: 165px;
+}
+.MEGA_MIRRORS{
+    top: 365px;
+    left: 165px;
+}
+.SHOWER_BOXES{
+    top: 215px;
+    left: 440px;
+}
+.DESIGN_SERIES{
+    top: 290px;
+    left: 440px;
+}
+#p_show_menu a:hover{
+    color: rgb(219, 219, 219);
+}
+#p_show_menu .infa a{
+    font-size: 18px;
+    font-weight: 600;
+}
+.text1{
+    top: 256px;
+    left: 738px;
+}
+.text2{
+    top: 303px;
+    left: 738px;
+}
+.text3{
+    top: 350px;
+    left: 738px;
+}
+.text4{
+    top: 256px;
+    left: 970px;
+}
+.text5{
+    top: 303px;
+    left: 970px;
+}
+.poshta, .tel, .grafik, .back{
+    width: 340px;
+    height: 160px;
+    border: 1px solid rgba(141, 141, 141, 0.445);
+    position: absolute;
+    top: 634px;
+}
+.tel{
+    left: 340px;
+}
+.grafik{
+    left: 680px;
+}
+.back{
+    left: 1020px;
+    width: 350px;
+
+}
+.logo_p{
+    height: 45px;
+    width: 45px;
+    background-color: #3d3d3d;
+    border-radius: 60px;
+    position: absolute;
+    top: 58px;
+    left: 70px;
+}
+#p_show_menu .poshta a{
+    font-size: 17px;
+    top: 63px;
+    left: 130px;
+}
+.logo_p .sms{
+    position: absolute;
+    top: 11px;
+    left: 11px;
+}
+.logo_t{
+    height: 45px;
+    width: 45px;
+    background-color: #3d3d3d;
+    border-radius: 60px;
+    position: absolute;
+    top: 58px;
+    left: 70px;
+}
+#p_show_menu .tel a{
+    font-size: 17px;
+    top: 63px;
+    left: 130px;
+}
+.logo_t .telef{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+.logo_g{
+    height: 45px;
+    width: 45px;
+    background-color: #3d3d3d;
+    border-radius: 60px;
+    position: absolute;
+    top: 58px;
+    left: 70px;
+}
+.logo_g .graf{
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+#p_show_menu .grafik a{
+    font-size: 17px;
+}
+#p_show_menu .grafik .a1{
+    font-size: 17px;
+    top: 55px;
+    left: 130px;
+}
+#p_show_menu .grafik .a2{
+    font-size: 17px;
+    top: 78px;
+    left: 130px;
+}
+#p_show_menu .back a{
+    font-size: 17px;
+    position: absolute;
+    top: 57px;
+    left: 50px;
+}
+#p_show_menu .back .strela{
+    position: absolute;
+    top: 63px;
+    left: 250px;
+}
+#p_show_menu .back .line{
+    background-color: white;
+    height: 1px;
+    width: 200px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+#p_show_menu .back a:hover ~.line{
+    opacity: 0.8;
+    width: 250px;
+    left: 50px;
+    background-color: rgb(255, 255, 255);
+}
+#p_show_menu .back .strela:hover ~.line{
+    opacity: 0.8;
+    width: 250px;
+    left: 50px;
+    background-color: rgb(255, 255, 255);
+}
+#back_m .line1{
+    height: 1px;
+    width: 30px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+#back_m .line2{
+    height: 1px;
+    width: 30px;
+    background-color: white;
+    transform: rotate(135deg);
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+#back_m{
+    position: absolute;
+    top: -100px;
+    transition: all .3s ease;
+}
+
+
+
