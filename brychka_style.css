@@ -519,7 +519,7 @@ body {
     position: absolute;
 }
 
-.br_block_centr2 .b_conteiner .b_img_content div p {
+.br_block_centr2 .b_conteiner .b_img_content div a {
     display: inline-block;
     position: absolute;
     z-index: 1;
@@ -530,7 +530,7 @@ body {
     transition: ease .2s all;
 }
 
-.br_block_centr2 .b_conteiner .b_img_content div:hover p {
+.br_block_centr2 .b_conteiner .b_img_content div:hover a {
     color: black;
 }
 
