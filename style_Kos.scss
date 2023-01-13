@@ -5,6 +5,7 @@
 }
 
 .BestPropositions {
+    
     padding: 3% 0;
     h2 {
         text-align: center;
@@ -27,12 +28,14 @@
         padding: 5% 0 0 0;
         overflow-x: scroll;
         white-space: nowrap;
+        
 
         &::-webkit-scrollbar {
             display: none;
         }
 
         .element {
+            
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             vertical-align: top;
             height: 400px;

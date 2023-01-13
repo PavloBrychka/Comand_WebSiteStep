@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_Kos.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
     <title>Document</title>
 
 </head>
@@ -14,43 +17,44 @@
     <div class="BestPropositions">
         <h2>Кращі пропозиції</h2>
         <h4>НОВИНКИ</h4>
-        <div class="elements">
-            <div class="element">
+        <div class="elements" id="flavoursContainer">
+
+            <div class="element" onclick="location.href = 'https:\/\/www.youtube.com/watch?v=dQw4w9WgXcQ'">
                 <div class="image" style="background-image: url(/Screenshots_Kosobutskyi/screen1.png);"></div>
                 <div class="description">Дзеркало StudioGlass ALLEN з підсвіткою прямокутне</div>
                 <div class="price">4372 грн</div>
             </div>
-            <div class="element">
+            <div class="element" onclick="location.href = 'https:\/\/www.youtube.com/watch?v=dQw4w9WgXcQ'">
                 <div class="image" style="background-image: url(/Screenshots_Kosobutskyi/screen2.png);"></div>
                 <div class="description"><span>Дзеркало StudioGlass PLITVICE з підсвіткою прямокутне</span></div>
                 <div class="price">4048 грн</div>
             </div>
-            <div class="element">
+            <div class="element" onclick="location.href = 'https:\/\/www.youtube.com/watch?v=dQw4w9WgXcQ'">
                 <div class="image" style="background-image: url(/Screenshots_Kosobutskyi/screen4.png);"></div>
                 <div class="description"><span>Дзеркало StudioGlass MELVIN з підсвіткою прямокутне</span></div>
                 <div class="price">4048 грн</div>
             </div>
-            <div class="element">
+            <div class="element" onclick="location.href = 'https:\/\/www.youtube.com/watch?v=dQw4w9WgXcQ'">
                 <div class="image" style="background-image: url(/Screenshots_Kosobutskyi/screen5.png);"></div>
                 <div class="description"><span>Дзеркало StudioGlass KAMAL з підсвіткою прямокутне</span></div>
                 <div class="price">4048 грн</div>
             </div>
-            <div class="element">
+            <div class="element" onclick="location.href = 'https:\/\/www.youtube.com/watch?v=dQw4w9WgXcQ'">
                 <div class="image"
                     style="background-image: url(/Screenshots_Kosobutskyi/screen6.png); background-size: 25%; background-position: center;">
                 </div>
                 <div class="description"><span>Дзеркало StudioGlass BELFAST на ніжці</span></div>
                 <div class="price">4048 грн</div>
             </div>
-            <div class="element">
+            <div class="element" onclick="location.href = 'https:\/\/www.youtube.com/watch?v=dQw4w9WgXcQ'">
                 <div class="image"
                     style="background-image: url(/Screenshots_Kosobutskyi/screen7.png);background-size: 25%; background-position: center;">
                 </div>
                 <div class="description"><span>Дзеркало StudioGlass ONE RAFFLES на ніжці</span></div>
                 <div class="price">4048 грн</div>
             </div>
-            <div class="element">
-                <div class="image" style="background-image: url(/Screenshots_Kosobutskyi/screen8.png);"></div>
+            <div class="element" onclick="location.href = 'https:\/\/www.youtube.com/watch?v=dQw4w9WgXcQ'">
+                <div class="image" style="background-image: url(/Screenshots_Kosobutskyi/screen3.png);"></div>
                 <div class="description"><span>Дзеркало StudioGlass SALTON з підсвіткою прямокутне</span></div>
                 <div class="price">4048 грн</div>
             </div>
@@ -123,6 +127,60 @@
         }</script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR8P72HMX3zllKeeZt8X89dJWMEu0LSX8&callback=myMap"></script>
+
+
+
+
+
+
+    <!-- // jquery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    
+
+    <!-- // slick.min.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(".elements").slick({
+            dots: false,
+            infinite: true,
+            speed: 1500,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            variableWidth: true,
+            
+        })
+    </script>
+
+
+
+
+
+
+
+
+    <!-- <script>
+        const flavoursContainer = document.getElementById('flavoursContainer');
+        const flavoursScrollWidth = flavoursContainer.scrollWidth;
+        let width = 0;
+        let a = document.getElementsByClassName("element");
+        
+        for(let i =0;i<a.length;i++)
+        {
+            width += a[i].offsetWidth;
+        }
+        width = width;
+        window.addEventListener('load', () => {
+            self.setInterval(() => {
+                if (flavoursContainer.scrollLeft !== flavoursScrollWidth) {
+                    flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 1, 0);
+                }
+                
+            }, 15);
+        });
+    </script> -->
+
 
 </body>
 
