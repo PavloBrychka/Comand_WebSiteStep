@@ -26,7 +26,7 @@ function menu_show(){
         line2.style.top = `${23}px`;
         line3.style.top = `${29}px`;
         kr.style.top = `${-100}px`;
-        menu.style.left = `${-1380}px`;
+        menu.style.left = `-100vw`;
         memu_v = false;
         body.style.overflowY = "auto";
     } else{
@@ -46,8 +46,7 @@ function p_r2(){
 }
 function p_r1(){
     page1.style.marginLeft = "0px";
+    page1.style.marginRight = "0px";
     b.textContent = "1";
     skr = true;
 }
-
-
