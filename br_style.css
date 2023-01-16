@@ -452,7 +452,7 @@ body {
     width: 50vw;
     position: absolute;
     /* margin-bottom: 5vw; */
-    bottom: 30vw;
+    /* bottom: 30vw; */
     /* top: 0; */
     right: 8%;
 
@@ -467,7 +467,7 @@ body {
     position: absolute;
     height: fit-content;
     width: 40vw;
-    top: -40vw;
+    /* top: -40vw; */
     right: 4vw;
    
 

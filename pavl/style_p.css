@@ -1,6 +1,10 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
 .p_head{
     background-color: rgb(22, 22, 22);
-    position: absolute;
     display: flex;
     width: 100vw;
 }
@@ -25,7 +29,7 @@ body::-webkit-scrollbar {
     background-color: #383838;
 }
 .p_head .navigation{
-    position: absolute;
+    
     top: 690px;
     left: 1200px;
     transform: translateX(-50%);
@@ -142,12 +146,15 @@ i{
     left: 240px;
 }
 .p_page2{
-    position: absolute;
+    
     top:790px;
     left: 0px;
+    background-image: url("https://cdn.discordapp.com/attachments/965645827035000862/1062512526669131918/paralax-small_1.png");
+    background-size: cover;
 }
 .p_page2 img{
     height: 430px;
+    width: 100%;
 }
 .p_page2 .block{
     
@@ -162,7 +169,7 @@ i{
 h2{
     text-align: center;
     font-weight: lighter;
-    
+    line-height: 1em;
 }
 .p_v_menu{
     -webkit-backdrop-filter: blur(10px);
