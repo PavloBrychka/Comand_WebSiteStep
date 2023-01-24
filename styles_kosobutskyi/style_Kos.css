@@ -89,6 +89,8 @@
   width: fit-content;
   margin: 2% 0;
   cursor: pointer;
+
+  margin-left: 6%; /* br pravka */
 }
 .foot .table_1 .right {
   width: 45vw;
@@ -99,6 +101,7 @@
   list-style: none;
   align-items: center;
   margin: auto auto;
+ 
 }
 .foot .table_1 .right ul li {
   width: -webkit-fit-content;
@@ -106,10 +109,12 @@
   width: fit-content;
   margin: 2% 0;
   cursor: pointer;
+ 
 }
 .foot .info_table {
   padding-top: 3%;
   border-spacing: 10px;
+  margin-left: 4%; /* br pravka */
 }
 .foot .info_table tr td:first-child {
   color: lightgray;
@@ -120,6 +125,7 @@
 }
 .foot .comps {
   padding-top: 3%;
+  margin-left: 5%; /* br pravka */
 }
 .foot .comps div {
   display: inline-block;

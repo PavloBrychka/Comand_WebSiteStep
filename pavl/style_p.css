@@ -23,6 +23,7 @@ body{
 }
 .overflow {
     min-height: 400px;
+    
 }
 body::-webkit-scrollbar {
     width: 5px;
@@ -30,8 +31,9 @@ body::-webkit-scrollbar {
 }
 .p_head .navigation{
     
-    top: 690px;
-    left: 1200px;
+    /* top: 690px;
+    left: 1200px; */
+
     transform: translateX(-50%);
     display: flex;
 }
@@ -433,6 +435,7 @@ h2{
 .LED_MIRROR{
     top: 215px;
     left: 165px;
+    /* left: 150vw; */
 }
 .IRON_MIRROR{
     top: 290px;
