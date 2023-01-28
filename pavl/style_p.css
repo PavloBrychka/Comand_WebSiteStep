@@ -6,7 +6,8 @@
 .p_head{
     background-color: rgb(22, 22, 22);
     display: flex;
-    width: 100vw;
+    overflow: hidden;
+    /* width: 100vw; */
 }
 
 .p_head::-webkit-scrollbar{
@@ -36,13 +37,15 @@ body::-webkit-scrollbar {
 
     transform: translateX(-50%);
     display: flex;
+    overflow: hidden;
 }
 .navigation b{
     position: absolute;
     top: 0px;
     left: 120px;
-    font-size: 20px;
+    font-size: 2vw;
     z-index: 100;
+    overflow: hidden;
     /* width: 50px; */
 }
 .bar{
@@ -72,8 +75,9 @@ input[name="r"]{
     visibility: hidden;
 }
 .page{
-    height: 795px;
-    width: 100%;
+    /* height: 795px; */
+    height: 100vh;
+    width: 100vw;
     transition: all .6s ease;
 }
 .page img{
@@ -82,17 +86,24 @@ input[name="r"]{
 }
 .page .pid_menu{
     position: relative;
-    width: 100%;
-    top:-290px;
+    width: 100vw;
+    bottom: 20vw;
+    /* top:-290px; */
     /* left: 180px; */
 }
 @font-face {
     font-family: Gina-Thin; 
     src: url(fonts/Gina-Thin.woff2);
 }
-h1 , h2{
+h1{
     color: #ddd;
-    font-size: 70px;
+    font-size: 5vw;
+    font-family: Gina-Thin;
+    margin-left: 20%;
+}
+h2{
+    color: #ddd;
+    font-size: 5vw;
     font-family: Gina-Thin;
 }
 b{
@@ -101,6 +112,7 @@ b{
     font-family: Gina-Thin;
     position: absolute;
     top:120px;
+    margin-left: 20%;
 }
 i{
     position: absolute;
@@ -109,9 +121,12 @@ i{
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    margin-left: 20%;
 }
 .btn{
     cursor:pointer;
+  
+    
 }
 .line{
     background-color: rgb(75, 75, 75);
@@ -121,6 +136,7 @@ i{
     top: 160px;
     left: 80px;
     transition: all .4s ease;
+  
 }
 .line2{
     background-color: rgb(75, 75, 75);
@@ -130,6 +146,7 @@ i{
     top: 160px;
     left: 40px;
     transition: all .3s ease;
+    margin-left: 20%;
 }
 .btn b:hover ~.line{
     opacity: 0.8;
@@ -173,15 +190,20 @@ h2{
     font-weight: lighter;
     line-height: 1em;
 }
+
+/* Menu */
+
 .p_v_menu{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: transparent;
     position: fixed;
-    height: 70px;
+   
+    height: 5vw;
     width: 100vw;
+   
     top: -1px;
-    left: 70px;
+    left: 3.5vw;
     border: 0.5px solid rgb(71, 71, 71);
 }
 .p_l_menu{
@@ -252,23 +274,35 @@ h2{
 
 .logo{
     position: absolute;
-    top: 15px;
+    /* top: 15px;
     left: 20px;
-    width: 90px;
+    width: 90px; */
+
+    top: 15%;
+    left: 5%;
+    width: 7%;
 }
 .h-icon{
     position: absolute;
-    top: 26px;
-    left: 149px;
+    /* top: 26px;
+    left: 149px; */
+    top: 25%;
+    left: 28%;
+    height: 1vw;
+    width: 1vw;
 }
 .p_v_menu b{
-    font-size: 14px;
+    /* font-size: 14px;
     top: 22px;
-    left: 180px;
+    left: 180px; */
+    font-size: 1.3vw;
+    top: 20%;   
+    left: 10%;
 }
 .p_v_menu .golovna{
-    font-size: 16px;
-    left: 480px;
+    font-size: 1.3vw;
+    /* left: 480px; */
+    left: 25%;
     transition: all .2s ease;
     cursor: pointer;
 }
@@ -276,8 +310,13 @@ h2{
     color: #adadad;
 }
 .p_v_menu .k_t{
-    font-size: 16px;
-    left: 570px;
+    /* font-size: 16px;
+    left: 570px; */
+
+    font-size: 1.3vw;
+    /* left: 480px; */
+    left: 30%;
+
     transition: all .2s ease;
     cursor: pointer;
 
@@ -286,8 +325,11 @@ h2{
     color: #adadad;
 }
 .p_v_menu .ofera{
-    font-size: 16px;
-    left: 710px;
+    /* font-size: 16px;
+    left: 710px; */
+    font-size: 1.3vw;
+    
+    left: 40%;
     transition: all .2s ease;
     cursor: pointer;
 

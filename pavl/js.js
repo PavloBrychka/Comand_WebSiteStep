@@ -16,10 +16,24 @@ setTimeout(() => {
     if(skr == true)
     {
         p_r2();
+      
     } else{
         p_r1();
+        
     }
 }, 5000);
+
+function scrol_click_img() //br_pravka event onclick() - img
+{
+    if(skr == true)
+    {
+        p_r2();
+        skr = false;
+    } else{
+        p_r1();
+        skr = true;
+    }
+}
 function menu_show(){
     if(memu_v == true){
         line1.style.top = `${17}px`;
@@ -40,7 +54,9 @@ function menu_show(){
     }
 }
 function p_r2(){
-    page1.style.marginLeft = "-1450px";
+    // page1.style.marginLeft = "-1450px";
+    page1.style.marginLeft = "-100vw";
+  
     b.textContent = "2";
     skr = false;
 }
